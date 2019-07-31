@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+   int a,b,c,mab,mac,mbc,mabmac,mabmacmbc;
+
+   scanf("%i %i %i",&a,&b,&c);
+   //descobrir o maior
+   mab=(a+b+abs(a-b))/2;
+   mac=(a+c+abs(a-c))/2;
+   mbc=(b+c+abs(b-c))/2;
+
+   mabmac = (mab+mac+abs(mab-mac))/2;
+   mabmacmbc = (mabmac +mbc+ abs(mabmac-mbc))/2;
+   printf("%i eh o maior",mabmacmbc);
+    return 0;
+}
