@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  float a,b,c,d,e,f;
+  int contador,i;
+  
+        for(i=0;i<6;i++)
+        {
+            scanf("%f",&a);
+            
+        }
+
+        return 0;
+    }
