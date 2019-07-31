@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,fatorial;
+
+    printf("Digite um numero inteiro\n");
+    scanf("%i",&i);
+
+//FATORIAL
+        for(fatorial=1;i>1;i--)
+        {
+         fatorial= i*fatorial;
+        }
+        printf("Fatorial:%i\n",fatorial);
+
+        return 0;
+}
