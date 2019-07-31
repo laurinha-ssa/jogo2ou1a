@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,n;
+
+    printf("Digite um numero inteiro\n");
+    scanf("%i",&i);
+
+    //tabuada de i até*20
+
+    for(n=1;n<=20;n++)
+    {
+        printf("%i * %i = %i\n",i,n,i*n);
+    }
+    return 0;
+}
+
