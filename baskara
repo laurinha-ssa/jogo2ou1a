@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+ double A,B,C,bas1,bas2,d;
+
+ scanf("%lf %lf %lf",&A, &B, &C);
+
+    d=((pow(B,2))-(4*A*C));
+
+    if((d>=0) && (A>0))
+    {
+    bas1= (-B + sqrt(d))/(A*2);
+    bas2=(-B - sqrt(d))/(A*2);
+
+        printf ("R1 = %.5lf\n", bas1);
+        printf ("R2 = %.5lf\n", bas2);
+    }
+    else if((d<0) || (A==0))
+    {
+        printf("Impossivel calcular\n");
+    }
+
+    return 0;
+}
