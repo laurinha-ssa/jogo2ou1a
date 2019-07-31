@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    char caractere;
+    int n1, n2;
+
+    printf("digite + - ? * e dois numeros inteiros\n");
+    scanf("%c", &caractere);
+    scanf("%i %i",&n1, &n2 );
+
+    switch(caractere)
+    {
+            case '+':
+            printf("%i + %i=%i\n", n1, n2, n1+n2);
+
+            case '-':
+            printf("%i - %i=%i\n", n1, n2, n1-n2);
+
+            case '*':
+            printf("%i * %i=%i\n", n1, n2, n1*n2);
+
+            case '/':
+            if (n2!=0){
+            printf("%i / %i=%lf\n", n1, n2, (double)n1/n2);
+            }
+            else {
+            printf("error");
+            }
+    }
+zx
+return 0;
+}
