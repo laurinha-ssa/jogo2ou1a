@@ -2,6 +2,7 @@
 
 int main()
 {
+    while(1) {
     int a,b,c;
 
     printf("jogador 1 escolha dois ou um: ");
@@ -18,16 +19,19 @@ int main()
         {
             printf("jogador 1 escolha dois ou um: ");
             scanf("%i",&a);
+            break;
         }
         while((b<1) || (b>2))
         {
             printf("jogador 2 escolha dois ou um: ");
             scanf("%i",&b);
+            break;
         }
         while((c<1) || (c>2))
         {
             printf("jogador 3 escolha dois ou um: ");
             scanf("%i",&c);
+            break;
 
 
         }
@@ -36,19 +40,23 @@ int main()
         if((a==b) && (c!=a)&& (c!=b) )
         {
             printf("jogador 3 ganhou!!\n");
+            break;
         }
         else if((a==c) && (b!=a)&& (b!=c))
         {
             printf("jogador 2 ganhou!!\n");
+            break;
         }
         else if((c==b) && (a!=b)&& (a!=c) )
         {
             printf("jogador 1 ganhou!!\n");
+            break;
         }
         else if((c==a)||(c==b)||(b==a))
         {
             printf("empate\n");
-
         }
+    }
     return 0;
 }
+
