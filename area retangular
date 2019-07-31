@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main () {
+
+float L1;
+float L2;
+
+    printf("insira o valor dos lados da figura qudrangular ou retangular\n");
+    scanf("%f %f", &L1, &L2);
+
+        float area=L1*L2;
+            printf("area=\n");
+                printf("%f\n", area);
+
+        float per=(2*L1) + (2*L2);
+             printf("o valor do perimetro=\n");
+                printf("%f\n", per);
+
+                return 0;
+}
