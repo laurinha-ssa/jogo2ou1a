@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int c,q;
+  double r;
+
+    scanf("%i",&c)
+      printf("%i",c);
+
+
+  if(c>100)
+  {
+      int q= c/100
+        r=C%100
+}
+    return 0;
+}
