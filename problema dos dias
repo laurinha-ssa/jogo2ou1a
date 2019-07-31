@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int d1,d2,m1,m2,falta;
+
+    printf("digite a data inicial e a data final\n");
+    scanf("%i %i %i %i",&d1,&m1,&d2,&m2);
+
+    if((m2==m1) && (d1>d2))
+    {
+        int falta = 360 - (d1-d2);
+        printf("falta: %i\n", falta);
+    }
+    else if((d1==d2) && (m2>m1))
+    {
+        int falta = 30 *(m2 - m1);
+        printf("falta: %i\n", falta);
+    }
+    else if((d1==d2) && (m2<m1))
+    {
+        int falta = 360 - (30*(m1-m2));
+        printf("falta: %i\n", falta);
+    }
+    else if((m2==m1)&&(d1==d2))
+    {
+     int falta=d1-d2;
+        printf("falta:%i\n",falta);
+    }
+    else if((m2-m1==1) && (d2!=d1))
+    {
+        int falta= (30-d1)+d2;
+        printf("falta: %i\n",falta);
+    }
+    else if((m2-m1>1) && (d2!=d1))
+    {
+        int falta = ((30-d1)+d2)+30*(m2-m1);
+        printf("falta: %i\n",falta);
+    }
+    return 0;
+}
+
