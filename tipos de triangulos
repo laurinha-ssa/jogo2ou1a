@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+   double a,b,c;
+
+        scanf("%lf %lf %lf", &a, &b, &c);
+
+            if((a>b)&&(b>c))
+            {
+                else if(a >= (b+c))
+                {
+                    printf("NAO FORMA TRIANGULO\n");
+                }
+                else if((pow(a,2))=(pow(b,2)) + (pow(c,2)))
+                        {
+                         printf("TRIANGULO RETANGULO\n");
+                        }
+                else if((pow(a,2)>(pow(b,2)) + (pow(c,2)))
+                        {
+                        printf("TRIANGULO OBTUSANGULO\n");
+                        }
+                else if((pow(a,2)<(pow(b,2)) + (pow(c,2)))
+                        {
+                        printf("TRIANGULO ACUTANGULO\n");
+                        }
+                else if((a==b)&& (b==c)&& (c==a))
+                {
+                    printf("TRIANGULO EQUILATERO\n");
+                }
+                else if((a==b)||(b==c)||(c==a))
+                {
+                    printf("TRIANGULO ISOCELES\n");
+                }
+            }
+
+
+            else if((a>c)&&(c>b))
+            {
+                printf("%f\n%f\n%f\n\n",b,c,a);
+                printf("%f\n%f\n%f\n",a,b,c);
+            }
+            else if((b>a)&&(a>c))
+            {
+                printf("%f\n%f\n%f\n\n",c,a,b);
+                printf("%f\n%f\n%f\n",a,b,c);
+            }
+            else if((c>a)&&(a>b))
+            {
+                printf("%f\n%f\n%f\n\n",b,a,c);
+                printf("%f\n%f\n%f\n",a,b,c);
+            }
+            else if((c>b)&&(b>a))
+            {
+                printf("%f\n%f\n%f\n\n",a,b,c);
+                printf("%f\n%f\n%f\n",a,b,c);
+            }
+            else if((b>c)&&(c>a))
+            {
+                printf("%f\n%f\n%f\n\n",a,c,b);
+                printf("%f\n%f\n%f\n",a,b,c);
+            }
+
+
+return 0;
+}
