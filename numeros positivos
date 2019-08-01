@@ -3,6 +3,7 @@
 
 int main()
 {
+//informa quantos numeros pares o usuario inseriu
   float a,b,c,d,e,f;
     int cont;
         for(cont=0;cont<6;cont++)
