@@ -1,0 +1,16 @@
+include<stdio.h>
+
+int main()
+{
+    double pi=3.1415;
+    double raio;
+
+    printf ("digite o raio de um círculo para saber a area");
+    scanf ("%lf", &raio);
+
+        double area=pi*raio*raio;
+
+    printf ("a area e: %lf \n" ,area);
+
+    return 0;
+}
