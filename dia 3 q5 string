@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main()
+{
+   char v[20];
+   int valor,i,cont;
+
+   scanf("%s",v);
+   valor=strlen(v);
+
+   cont=0;
+   for(i=0;i<valor;i++)
+   {
+    cont=cont++;
+   }
+    printf("%i",i);
+
+
+return 0;
+}
