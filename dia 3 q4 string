@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main()
+{
+   char v1[20], v2[20];
+
+        scanf("%s %s",v1,v2);
+
+            if(strcmp(v1,v2)==0)
+            {
+                printf("sim");
+            }
+            else
+            {
+              printf("nao");
+            }
+
+return 0;
+}
