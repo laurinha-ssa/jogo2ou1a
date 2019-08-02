@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+
+int main()
+{
+    float m[3][3],soma=0;
+    int i,j;
+
+    for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                    printf("Digite o valor da linha %i e coluna %i:", i+1, j+1);
+                    scanf("%f",&m[i][j]);
+            }
+
+
+        }
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                    if(i==j)
+                    {
+                       soma = soma + m[i][j];
+                    }
+            }
+
+
+        }
+
+printf("%.2f\n",soma);
+
+return 0;
+}
