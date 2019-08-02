@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+  int m[5][3], v[3] = {0,0,0};
+  int i,j,cont=0;
+
+        for(i=0;i<5;i++)
+        {
+        for(j=0;j<3;j++)
+            {
+        scanf("%i",&m[i][j]);
+            }
+        }
+            for(i=0;i<5;i++)
+            {
+            for(j=0;j<3;j++)
+            {
+            if(m[i][j]<5)
+            {
+            v[j]++;
+            }
+            }
+            }
+        printf("Prova 1: %i aluno(s)\n", v[0]);
+        printf("Prova 2: %i aluno(s)\n", v[1]);
+        printf("Prova 3: %i aluno(s)\n", v[2]);
+
+    return 0;
+}
