@@ -1,33 +1,52 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
     char caractere;
-    int n1, n2;
+    double n1,n2;
 
-    printf("digite + - ? * e dois numeros inteiros\n");
-    scanf("%c", &caractere);
-    scanf("%i %i",&n1, &n2 );
-
+    printf("Digite a operacao aritmetica [+(para soma) -(para subtracao) *(para multiplicacao) /(para divisao) p(para potencia) r (para raiz quadrada)]:  ");
+        scanf("%c", &caractere);
+         if (caractere == 'r')
+        {
+            printf("digite o indice e o radicando: ");
+            scanf("%lf %lf", &n1, &n2);
+        }
+         else
+        {
+             printf("Digite dois numeros: ");
+             scanf("%lf %lf", &n1,&n2);
+        }
     switch(caractere)
     {
             case '+':
-            printf("%i + %i=%i\n", n1, n2, n1+n2);
+            printf("%lf + %lf = %lf\n", n1, n2, n1+n2);
+            break;
 
             case '-':
-            printf("%i - %i=%i\n", n1, n2, n1-n2);
+            printf("%lf - %lf = %lf\n", n1, n2, n1-n2);
+            break;
 
             case '*':
-            printf("%i * %i=%i\n", n1, n2, n1*n2);
+            printf("%lf * %lf = %lf\n", n1, n2, n1*n2);
+            break;
 
             case '/':
             if (n2!=0){
-            printf("%i / %i=%lf\n", n1, n2, (double)n1/n2);
+            printf("%lf / %lf = %lf\n", n1, n2,(double)n1/n2);
             }
             else {
-            printf("error");
+            printf("Nao existe divisao com denominador igual a 0.");
             }
+            break;
+            case 'p':
+            printf("%lf elevado a %lf = %lf\n",n1,n2, pow(n1,n2));
+            break;
+            case 'r':
+            printf("A raiz %lf de %lf e igual a %lf",n1,n2, pow(n2,1/n1));
+            break;
     }
-zx
 return 0;
 }
+//version 0.3
